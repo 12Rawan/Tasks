@@ -1,8 +1,6 @@
 import java.util.Scanner;
 import java.math.BigInteger;
 import java.util.StringTokenizer;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
 class Example1_way1{
 public static void main(String args[]){
@@ -32,22 +30,18 @@ public static void main(String args[]){
 
 class Example1_way2{
 public static void main(String args[]){
+
+
 	Scanner sc = new Scanner(System.in);
 
 	System.out.println("Enter the sentence : ");
 	String sentence = sc.nextLine();
 
-	System.out.println("Enter the letter : ");
-	char letter = sc.next().charAt(0);
-	int counter = 0;
-	for(int i = 0; i<sentence.length(); i++){
-		if(sentence.charAt(i) == letter){
-			counter++;
-		}
-	}
-
-	System.out.println("The sentence is : " + sentence);
-	System.out.println("letter : " + letter + " ocuurs " + counter + "  Times");
+	System.out.println("Enter the word : ");
+	String word = sc.nextLine();
+	
+	
+	System.out.println(sentence.indexOf(word));
 
 
 }}
@@ -125,30 +119,6 @@ public static void main(String args[]){
 }}
 
 
-////////////////////////////////////////////////////////////////////
-/*
-class counting{
-	String sentence ;
-
-	public static int getWordCount(String sentence) {
-		Pattern pattern = Pattern.compile();
-		Matcher  matcher = pattern.matcher(sentence);
-		int count = 0;
-		while (matcher.find())
-			  count++;
-  
-        return count;
-	}
-
-	public static void main(String args[]){
-		Scanner sc = new Scanner(System.in);
-
-		System.out.println("Enter the sentence : ");
-		String sentence = sc.nextLine();
-
-		System.out.println("number of groups : " + getWordCount(sentence));
-	}
-}*/
 
 
 
